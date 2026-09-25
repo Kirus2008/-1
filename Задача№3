@@ -1,0 +1,14 @@
+import random
+alf='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+digits='0123456789'
+simbols='!@#$%^&*'
+password=[]
+for _ in range(3):
+    password.append(random.choice(alf))
+for _ in range(3):
+    password.append(random.choice(digits))
+for _ in range(3):
+    password.append(random.choice(simbols))
+random.shuffle(password)
+parol="".join(password)
+print(f"Сгенерированный пароль {parol}")
